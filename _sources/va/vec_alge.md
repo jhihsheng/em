@@ -76,6 +76,6 @@ $$B_iC_{ij}A_j=?$$
 
 ## Free index, contraction 
 
-當張量有一個index時，我們可視它為一個張量，例如 $A_\mu$，這時候 $\mu$ 是一個未指定的下標，
-所以 $A_\mu$ 可以有 $A_x$, $A_y$, $A_z$ 三種可能性，因此我們稱 $A_\mu$ 是 free index。
-但是遇到$A_\mu B_\mu$ 這種乘積時，我們必須使用 Einstein convention，因此必須把 $\mu$的所有可能列出以計算最後了和，因此 **$A_\mu B_\mu$** 這個數並沒有任何分量(可能性)，是一個純量 scalar，此時，我們稱 $\mu$ 為 dummy index。 
+當張量有一個index時，我們可視它為一個向量，例如$A_\mu$是一個向量，因為這時候 $\mu$ 是一個未指定的下標，
+所以 $A_\mu$ 可以有 $A_x$, $A_y$, $A_z$ 三種可能性，因此我們稱 $\mu$ 是 free index。
+但是遇到$A_\mu B_\mu$ 這種乘積時，我們必須使用 Einstein convention，因此必須把 $\mu$的所有可能列出以計算最後的和，因此 **$A_\mu B_\mu$** 這個數並沒有任何分量(可能性)，是一個純量 scalar，此時，我們稱 $\mu$ 為 dummy index。 這個概念與線性代數裡和的index $\sum_{i=0,1,2,...}$ 一樣，此時 $i$ 是dummy index，因為它已經使用在合的計算中。**對於計算而言，dummy index 的符號可以任意改變(例如 $\sum_{i} = \sum_{j}$，可以隨意改變$i$成另外一個符號)**，這也是它被稱為dummy的原因。
