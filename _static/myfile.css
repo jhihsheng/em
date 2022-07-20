@@ -1,0 +1,65 @@
+  
+/* base colors for main area, justify text */
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+body {
+	background-color: rgb(255, 252, 242);
+    font-family:  -apple-system, BlinkMacSystemFont, Segoe UI, "Helvetica Neue", Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+        "Arial",'Georgia','DFKai-SB','BiauKai';
+    font-size: 20 px;
+    
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Tangerine','DFKai-SB','BiauKai', serif;
+    font-weight: 650;
+    text-shadow: 10px 10px 10px #aaa;
+}
+
+footer {
+background-color: lightsteelblue;
+}
+p { font-size: 14 px;
+}
+
+
+/* -------------------------------------------
+            SIDE NAV OPTIONS
+------------------------------------------- */
+
+
+#site-navigation {
+	color: white;
+    border-right-width: 0px;
+
+}
+
+#site-navigation .bd-sidebar__content{
+    color: orange;
+    border-right-width: 0px;
+    background-color: rgb(30,30,30) ;
+
+}
+
+#site-navigation nav ul.nav li a,#site-navigation nav ul.nav ul li a
+{color: #ee4466; }
+
+#site-navigation h1.site-logo
+{color: ivory; font-size: 1.8em;text-shadow: 0px 0px 0px #2c31d1;}
+#site-navigation span.caption-text
+{color: ivory; font-size: 20 px;}
+
+#site-navigation input
+{background-color: ivory;}
+
+#site-navigation nav ul.nav li.active>a:hover{color:#E5E4E2;}
+
+#site-navigation div.navbar_extra_footer{
+    text-align:center;
+    font-size:.9em;
+    color: #E5E4E2;/*platinum*/
+    margin-bottom:3em}
+
+#site-navigation nav ul.nav a:hover,#site-navigation nav ul.nav li.active>a,#site-navigation nav ul.nav li.active>a:hover
+{color:#66cc94;}

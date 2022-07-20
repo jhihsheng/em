@@ -6,7 +6,5 @@ root: intro
 options:  # The options key will be applied to all chapters, but not sub-sections
   numbered: True
 chapters:
-- file: va/intro.md
-  sections:
-  - file: va/vec_alge.md
+- file: vec_alge.md
 
