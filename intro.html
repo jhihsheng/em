@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to your Jupyter Book &#8212; EM</title>
+    <title>Outline of Electrodynamics &#8212; Electromagnetism</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -53,11 +54,14 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="shortcut icon" href="_static/JLW_icon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Markdown Files" href="markdown.html" />
+    <link rel="next" title="1. Vector Analysis" href="va/intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -106,10 +110,10 @@ const thebe_selector_output = ".output, .cell_output"
         
       
       
-      <img src="_static/logo.png" class="logo" alt="logo">
+      <img src="_static/em_logo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">EM</h1>
+      <h1 class="site-logo" id="site-title">Electromagnetism</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -121,25 +125,27 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    Welcome to your Jupyter Book
+                    Outline of Electrodynamics
                 </a>
             </li>
         </ul>
         <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown.html">
-   Markdown Files
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="va/intro.html">
+   1. Vector Analysis
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks.html">
-   Content with notebooks
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown-notebooks.html">
-   Notebooks with MyST Markdown
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="va/vec_alge.html">
+     1.1. Vector Algebras
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -296,23 +302,60 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vectors-do-matter">
+   Vectors do matter 方向很重要!
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Welcome to your Jupyter Book</h1>
+                <h1>Outline of Electrodynamics</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vectors-do-matter">
+   Vectors do matter 方向很重要!
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -320,19 +363,42 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="welcome-to-your-jupyter-book">
-<h1>Welcome to your Jupyter Book<a class="headerlink" href="#welcome-to-your-jupyter-book" title="Permalink to this headline">#</a></h1>
-<p>This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a> for more information.</p>
-<p>Check out the content pages bundled with this sample book to see more.</p>
-<div class="toctree-wrapper compound">
+  <div class="tex2jax_ignore mathjax_ignore section" id="outline-of-electrodynamics">
+<h1>Outline of Electrodynamics<a class="headerlink" href="#outline-of-electrodynamics" title="Permalink to this headline">#</a></h1>
+<p>教學順序</p>
+<ul class="simple">
+<li><p>Vector Analysis</p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+<li><p>向量操作</p></li>
+<li><p>向量微分</p></li>
+<li><p>向量積分</p></li>
 </ul>
+</li>
+<li><p>Electrostatics</p></li>
+<li><p>Electrostatics in Matter</p></li>
+<li><p>Methods for Boundary Value Problems</p></li>
+<li><p>Magnetostatics</p></li>
+<li><p>Electrodynamics</p></li>
+</ul>
+<div class="section" id="vectors-do-matter">
+<h2>Vectors do matter 方向很重要!<a class="headerlink" href="#vectors-do-matter" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><p>人生是一場馬拉松，你今天的努力，不會立刻改變明天的你，但你立志的方向，將決定五年後、十年後、二十年後的你。</p>
+</div></blockquote>
+<blockquote>
+<div><p>Life is accumulation. Your height <span class="math notranslate nohighlight">\(h\)</span> is determined by not only your talent (velocity <span class="math notranslate nohighlight">\(\mathbf{v}\)</span>) but also the path you walk along.</p>
+</div></blockquote>
+<div class="math notranslate nohighlight">
+\[h = \int_{\mathrm{now}}^{\mathrm{future}} \mathbf{v}\cdot (\nabla h) dt = \int_{Path}\nabla h \cdot d\mathbf{l} \]</div>
+<p>梯度版本的微積分基本定理的啟發</p>
+<blockquote>
+<div><p>高度由走過的路 <span class="math notranslate nohighlight">\(d\mathbf{l}\)</span> 與遇到的梯度 <span class="math notranslate nohighlight">\(\nabla h\)</span> 決定</p>
+</div></blockquote>
+<blockquote>
+<div><p>通往山頂的路不是唯一的</p>
+</div></blockquote>
+</div>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -369,10 +435,10 @@ It does not go in-depth into any particular topic - check out <a class="referenc
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="markdown.html" title="next page">
+    <a class='right-next' id="next-link" href="va/intro.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Markdown Files</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Vector Analysis</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
