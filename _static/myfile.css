@@ -1,4 +1,12 @@
-  
+/*modify logo size*/  
+div.navbar-brand-box a.navbar-brand img {
+    min-height: 18vh !important;
+} 
+
+div.navbar-brand-box a.navbar-brand img {
+    max-height: 25vh !important;
+} 
+
 /* base colors for main area, justify text */
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
 
@@ -46,7 +54,7 @@ p { font-size: 14 px;
 {color: #ee4466; }
 
 #site-navigation h1.site-logo
-{color: ivory; font-size: 1.8em;text-shadow: 0px 0px 0px #2c31d1;}
+{color: ivory; font-size: 1.2em;text-shadow: 0px 0px 0px #2c31d1;}
 #site-navigation span.caption-text
 {color: ivory; font-size: 20 px;}
 
