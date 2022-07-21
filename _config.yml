@@ -3,9 +3,10 @@
 
 title: Electromagnetism 
 author: JSW
-logo: em_logo.png
+#logo: em_logo.png
 #logo: dr_logo.gif
-
+#logo: dipole_radiation.gif
+logo: dipole_radiation_1.png
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
