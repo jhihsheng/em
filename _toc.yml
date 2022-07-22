@@ -9,4 +9,5 @@ chapters:
 - file: va/intro.md
   sections:
   - file: va/vec_alge.md
+- file: gallery.md
 
