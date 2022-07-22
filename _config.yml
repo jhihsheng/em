@@ -27,6 +27,7 @@ repository:
   path_to_book: ""  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
+
 html:
   favicon: JLW_icon.png
   use_issues_button: true
@@ -38,6 +39,7 @@ sphinx:
     config:
         #html_theme: renku
         #html_theme: quantecon_book_theme
+      mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js  
     extra_extensions:
       - sphinxcontrib.mermaid
       - sphinxcontrib.wavedrom
