@@ -9,4 +9,7 @@ chapters:
 - file: va/intro.md
   sections:
   - file: va/vec_alge.md
+- file: gallery.md
+  sections:
+  - file: gal/circular_dipole_metal_thin.ipynb
 

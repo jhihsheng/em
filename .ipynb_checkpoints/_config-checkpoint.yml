@@ -11,6 +11,7 @@ logo: dipole_radiation_1.png
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: 'off'
+  stderr_output: 'remove'
 
 # Define the name of the latex output file for PDF builds
 latex:
